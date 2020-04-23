@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase Web Basics</title>
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet"> -->
+
+	<!-- <script src="https://use.fontawesome.com/939e9dd52c.js"></script> -->
+
+	<link rel="stylesheet" type="text/css" href="uploadbox.css"> 
+</head>
+<body>
+
+	<div class="mainDiv" align="right">
+		<h1 align="left">Firebase File Upload</h1> 
+		<progress id="uploader" value="0" max="100">0%</progress>
+		<input type="file" id="chooseButton" accept=".Zip"/>
+    <button type="submit" value="Upload" id="fileButton">UPLOAD</button>
+	</div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-storage.js"></script>
+  <script>
+  // Initialize Firebase
+  var firebaseConfig = {
+        apiKey: "AIzaSyACLEe6eS7BeLRY_6m0xQ65rxpKPzRCYiI",
+        authDomain: "docsimplr-691c9.firebaseapp.com",
+        databaseURL: "https://docsimplr-691c9.firebaseio.com",
+        projectId: "docsimplr-691c9",
+        storageBucket: "docsimplr-691c9.appspot.com",
+        messagingSenderId: "147085222021",
+        appId: "1:147085222021:web:b533a094dab4cdbfe249ec"
+    };
+    firebase.initializeApp(firebaseConfig)
+  //-------------------------------------
+  
+    
+  
+  
+</script>
+
+<script src="upload.js">
+</script>
+</body>
+</html>
